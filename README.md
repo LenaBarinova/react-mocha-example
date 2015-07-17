@@ -11,7 +11,7 @@ I wanted to create an environment for further React development. The things that
 For build scripts I prefer to use gulp.
 
 ## tl;dr
-You can find working code [here](http://github.com). Just download it and run 
+Download the code and run it: 
 
 ~~~
 $npm install
