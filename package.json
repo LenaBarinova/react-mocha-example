@@ -1,0 +1,30 @@
+{
+  "name": "VeryFirstDiv",
+  "version": "1.0.0",
+  "description": "Getting started with React and Mocha",
+  "main": "index.html",
+  "devDependencies": { 
+    "react": "^0.13.3",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-react": "^3.0.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-open": "^0.3.2",
+    "mocha": "2.0.1",
+    "gulp-shell": "^0.4.2",
+    "jsdom": "3.1.2",
+    "babel": "^5.1.13",
+    "mocha-jsdom": "^1.0.0",
+    "gulp-babel": "^5.1.0"
+  },
+  "scripts": {
+    "test": "mocha test/*-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JelenaBarinova/VeryFirstDiv.git"
+  },
+  "homepage": "http://jelenabarinova.github.io/VeryFirstDiv",
+  "author": "Jelena Barinova",
+  "license": "MIT"
+}
