@@ -3,19 +3,21 @@
   "version": "1.0.0",
   "description": "Getting started with React and Mocha",
   "main": "index.html",
-  "devDependencies": { 
-    "react": "^0.13.3",
+  "devDependencies": {
+    "babel": "^5.1.13",
     "gulp": "^3.9.0",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-react": "^3.0.1",
+    "gulp-babel": "^5.1.0",
     "gulp-browserify": "^0.5.1",
+    "gulp-load-plugins": "^0.10.0",
     "gulp-open": "^0.3.2",
-    "mocha": "2.0.1",
+    "gulp-react": "^3.0.1",
     "gulp-shell": "^0.4.2",
     "jsdom": "3.1.2",
-    "babel": "^5.1.13",
+    "mocha": "2.0.1",
     "mocha-jsdom": "^1.0.0",
-    "gulp-babel": "^5.1.0"
+    "react": "^0.14.3",
+    "react-addons-test-utils": "^0.14.3",
+    "react-dom": "^0.14.3"
   },
   "scripts": {
     "test": "mocha test/*-test.js"
