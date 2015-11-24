@@ -1,5 +1,5 @@
 {
-  "name": "VeryFirstDiv",
+  "name": "react-mocha-example",
   "version": "1.0.0",
   "description": "Getting started with React and Mocha",
   "main": "index.html",
@@ -24,9 +24,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/JelenaBarinova/VeryFirstDiv.git"
+    "url": "https://github.com/JelenaBarinova/react-mocha-example.git"
   },
-  "homepage": "http://jelenabarinova.github.io/VeryFirstDiv",
-  "author": "Jelena Barinova",
+  "homepage": "http://jelenabarinova.github.io/react-mocha-example",
+  "author": "Lena Barinova",
   "license": "MIT"
 }
