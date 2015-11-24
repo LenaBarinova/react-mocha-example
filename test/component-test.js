@@ -11,8 +11,6 @@ describe('Testing my div', function() {
 
   it('should contain text: Lovely! Here it is - my very first React component!', function() {
     var VeryFirstDiv = require('../components/component.jsx');
-    //var TestUtils = React.addons.TestUtils;
-
 
     var myDiv = TestUtils.renderIntoDocument(
       <VeryFirstDiv />
@@ -21,6 +19,6 @@ describe('Testing my div', function() {
     var divText = TestUtils.findRenderedDOMComponentWithTag(
       myDiv, 'span');
 
-    assert.equal(divText.getDOMNode().textContent, 'Lovely! Here it is - my very first React component!');
+    assert.equal(divText.textContent, 'Lovely! Here it is - my very first React component!');
   });
 });
