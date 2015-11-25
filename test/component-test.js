@@ -1,24 +1,34 @@
-// Mocking window and document object:
-require('./dom-mock')('<html><body></body></html>');
+'use strict';
 
-var jsdom = require('mocha-jsdom');
-var assert = require('assert');
-var React = require('react');
-var TestUtils = require('react-addons-test-utils');
+let assert = require('assert');
+
+let React = require('react');
+let ReactTestUtils = require('react-addons-test-utils');
 
 describe('Testing my div', function() {
-  jsdom({ skipWindowCheck: true });
 
-  it('should contain text: Lovely! Here it is - my very first React component!', function() {
-    var VeryFirstDiv = require('../components/component.jsx');
+  let VeryFirstDiv = require('../components/component.jsx');
+  let renderer = ReactTestUtils.createRenderer();
+  let myDiv;
 
-    var myDiv = TestUtils.renderIntoDocument(
-      <VeryFirstDiv />
-    );
 
-    var divText = TestUtils.findRenderedDOMComponentWithTag(
-      myDiv, 'span');
+  beforeEach(function() {
+    renderer.render(<VeryFirstDiv />);
+    myDiv = renderer.getRenderOutput();
 
-    assert.equal(divText.textContent, 'Lovely! Here it is - my very first React component!');
+  });
+
+  it('should render div component with class equals to veryFirstDiv', function() {
+
+    assert.equal(myDiv.type, 'div');
+    assert.equal(myDiv.props.className, 'veryFirstDiv');
+  });
+
+  it('should contain span with text: Lovely! Here it is - my very first React component!', function() {
+
+    const innerSpan = myDiv.props.children;
+
+    assert.equal(innerSpan.type, 'span');
+    assert.equal(innerSpan.props.children, 'Lovely! Here it is - my very first React component!');
   });
 });
